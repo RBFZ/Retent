@@ -1,0 +1,159 @@
+{
+  "appName": "Canvas LMS",
+  "version": "1.0.0",
+  "urlPatterns": [
+    "*.instructure.com/*",
+    "*/courses/*"
+  ],
+  "windowTitlePatterns": [
+    "Canvas",
+    "Instructure"
+  ],
+  "facts": [
+    {
+      "category": "navigation",
+      "key": "dashboard_location",
+      "value": "The Dashboard is the landing page after login. It shows course cards for all enrolled courses. Access via the 'Dashboard' link in the left global navigation sidebar."
+    },
+    {
+      "category": "navigation",
+      "key": "courses_list",
+      "value": "All enrolled courses are listed under 'Courses' in the left global navigation sidebar. Click 'All Courses' at the bottom to see past/future courses."
+    },
+    {
+      "category": "navigation",
+      "key": "modules_location",
+      "value": "Modules are accessed from the left course navigation menu inside any course. Modules organize content by week or topic. Each module can contain assignments, pages, files, quizzes, and external links."
+    },
+    {
+      "category": "navigation",
+      "key": "assignments_location",
+      "value": "Assignments are accessible from the left course navigation menu under 'Assignments'. They are grouped by assignment group (e.g., Homework, Exams, Projects). Individual assignments also appear inside Modules."
+    },
+    {
+      "category": "navigation",
+      "key": "grades_location",
+      "value": "Grades are accessible from the left course navigation menu under 'Grades'. Shows a table of all assignments with scores, points possible, and running total."
+    },
+    {
+      "category": "navigation",
+      "key": "syllabus_location",
+      "value": "The Syllabus page is in the left course navigation menu. It shows a chronological list of all assignments and events. Some professors also embed a PDF or page with the full syllabus document here."
+    },
+    {
+      "category": "navigation",
+      "key": "calendar_location",
+      "value": "The Calendar is in the left global navigation sidebar (not inside a specific course). It shows assignment due dates and events across all courses, color-coded by course."
+    },
+    {
+      "category": "navigation",
+      "key": "inbox_location",
+      "value": "The Inbox (Canvas messaging) is in the left global navigation sidebar. Used for messaging instructors and classmates within Canvas."
+    },
+    {
+      "category": "navigation",
+      "key": "files_location",
+      "value": "Files are accessible from the left course navigation menu under 'Files'. Contains all uploaded course files. Also accessible at the account level via global navigation for personal files."
+    },
+    {
+      "category": "navigation",
+      "key": "people_location",
+      "value": "The People page lists all enrolled students and instructors. Found in the left course navigation menu."
+    },
+    {
+      "category": "feature",
+      "key": "submission_types",
+      "value": "Assignments can require file uploads, text entry, URL submission, or media recording. The submission type is shown on the assignment detail page."
+    },
+    {
+      "category": "feature",
+      "key": "due_dates_display",
+      "value": "Due dates appear on assignment detail pages, in the Syllabus chronological list, in the Calendar, and in the To-Do sidebar on the Dashboard. Professors sometimes also list them in module descriptions or separate pages."
+    },
+    {
+      "category": "feature",
+      "key": "notifications_settings",
+      "value": "Notification preferences are in Account > Settings > Notifications (click your avatar in the top-left global nav, then Settings). You can configure email/push frequency per event type."
+    },
+    {
+      "category": "feature",
+      "key": "file_preview",
+      "value": "Canvas can preview PDFs, images, and some document types inline without downloading. Click a file link and it opens in the Canvas document viewer."
+    },
+    {
+      "category": "layout",
+      "key": "global_nav",
+      "value": "The left sidebar (global navigation) contains: Account, Dashboard, Courses, Groups, Calendar, Inbox, History, Help. This is always visible regardless of which course you're in."
+    },
+    {
+      "category": "layout",
+      "key": "course_nav",
+      "value": "Inside a course, the left sidebar shows course-specific navigation: Home, Modules, Assignments, Grades, Syllabus, People, Files, and possibly Discussions, Quizzes, Pages depending on professor configuration. Professors can hide or reorder these links."
+    },
+    {
+      "category": "layout",
+      "key": "professor_customization",
+      "value": "Professors can customize which navigation links are visible in their course. Some hide Modules, Syllabus, or Files. Content may be accessible via direct links even if the nav link is hidden."
+    },
+    {
+      "category": "workflow",
+      "key": "submit_assignment",
+      "value": "To submit an assignment: navigate to the assignment page (via Modules or Assignments), click 'Submit Assignment', choose submission type, attach file or enter text, click 'Submit Assignment' again to confirm."
+    },
+    {
+      "category": "workflow",
+      "key": "check_grades",
+      "value": "To check grades: go to the course, click 'Grades' in left nav. Shows all assignments with scores. Click an assignment name to see detailed feedback and rubric scores."
+    },
+    {
+      "category": "workflow",
+      "key": "find_exam_dates",
+      "value": "Exam dates may be in multiple places: the Syllabus page, the Calendar, inside a Module description, on an assignment detail page, or in a separate page/file uploaded by the professor. Check Syllabus and Calendar first, then browse Modules if not found."
+    },
+    {
+      "category": "terminology",
+      "key": "modules_definition",
+      "value": "In Canvas, 'Modules' are organizational containers that group related content (assignments, pages, files, quizzes) together, usually by week or topic."
+    },
+    {
+      "category": "terminology",
+      "key": "pages_definition",
+      "value": "'Pages' are Canvas content pages that professors create for instructions, notes, or resources. They don't have submission or grading — they're informational."
+    },
+    {
+      "category": "terminology",
+      "key": "rubric_definition",
+      "value": "A 'Rubric' is a grading criteria table attached to an assignment. Shows point breakdown by category. Visible on the assignment detail page after grading."
+    }
+  ],
+  "commonQuestions": [
+    {
+      "question": "Where are my exam dates?",
+      "factKeys": ["find_exam_dates", "syllabus_location", "calendar_location", "professor_customization"]
+    },
+    {
+      "question": "Where do I find my grades?",
+      "factKeys": ["grades_location", "check_grades"]
+    },
+    {
+      "question": "How do I submit an assignment?",
+      "factKeys": ["submit_assignment", "assignments_location", "submission_types"]
+    },
+    {
+      "question": "Where is the syllabus?",
+      "factKeys": ["syllabus_location", "professor_customization"]
+    },
+    {
+      "question": "Where are my course files?",
+      "factKeys": ["files_location", "file_preview"]
+    },
+    {
+      "question": "How do I message my professor?",
+      "factKeys": ["inbox_location"]
+    },
+    {
+      "question": "What's due this week?",
+      "factKeys": ["calendar_location", "due_dates_display", "syllabus_location"]
+    }
+  ]
+}

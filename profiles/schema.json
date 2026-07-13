@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RetentStarterProfile",
+  "description": "Schema for Retent starter knowledge base profiles. These are pre-built profiles shipped with the app to provide immediate value before passive learning kicks in.",
+  "type": "object",
+  "required": ["appName", "version", "urlPatterns", "facts"],
+  "properties": {
+    "appName": {
+      "type": "string",
+      "description": "Display name of the application"
+    },
+    "version": {
+      "type": "string",
+      "description": "Profile version (semver)"
+    },
+    "urlPatterns": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "URL patterns that identify this application (glob-style)"
+    },
+    "windowTitlePatterns": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Window title substrings that identify this application"
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "key", "value"],
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": ["navigation", "feature", "layout", "workflow", "terminology"]
+          },
+          "key": {
+            "type": "string",
+            "description": "Short identifier for this fact"
+          },
+          "value": {
+            "type": "string",
+            "description": "The knowledge content"
+          }
+        }
+      },
+      "description": "Pre-built knowledge facts about this application"
+    },
+    "commonQuestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question", "factKeys"],
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "A question users commonly ask"
+          },
+          "factKeys": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Fact keys relevant to answering this question"
+          }
+        }
+      },
+      "description": "Common questions mapped to relevant facts, used for better context assembly"
+    }
+  }
+}
